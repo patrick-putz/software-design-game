@@ -2,12 +2,10 @@ package softwaredesign.game;
 
 import softwaredesign.game.assets.AssetRepository;
 import softwaredesign.game.gameobjects.GameObject;
-import softwaredesign.game.gameobjects.Sign;
 import softwaredesign.game.gameobjects.mapdesigner.MapDesigner;
 import softwaredesign.game.input.GameInput;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
