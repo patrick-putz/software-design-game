@@ -1,5 +1,6 @@
 package softwaredesign.game;
 
+import softwaredesign.game.assets.AssetRepository;
 import softwaredesign.game.gameobjects.GameObject;
 import softwaredesign.game.gameobjects.Sign;
 import softwaredesign.game.input.GameInput;
@@ -28,6 +29,7 @@ public class Main extends ApplicationAdapter {
 
 	@Override
 	public void create() {
+		AssetRepository.loadAssets();
 		batch = new SpriteBatch();
 		gameObjects.add(new Sign());
 		font = new BitmapFont();
