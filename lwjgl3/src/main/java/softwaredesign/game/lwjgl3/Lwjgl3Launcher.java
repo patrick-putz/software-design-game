@@ -1,9 +1,8 @@
-package at.compus02.swd.ss2022.game.lwjgl3;
+package softwaredesign.game.lwjgl3;
 
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
-import at.compus02.swd.ss2022.game.Main;
+import softwaredesign.game.Main;
 
 /** Launches the desktop (LWJGL3) application. */
 public class Lwjgl3Launcher {
