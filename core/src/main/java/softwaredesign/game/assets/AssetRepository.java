@@ -18,6 +18,7 @@ public class AssetRepository {
         assets.put(AssetType.TILE_GRAVEL, new Texture("tile_gravel.png"));
         assets.put(AssetType.TILE_WALL, new Texture("tile_wall.png"));
         assets.put(AssetType.TILE_WATER, new Texture("tile_water.png"));
+        assets.put(AssetType.PLAYER, new Texture("player.png"));
     }
 
 }

@@ -8,5 +8,6 @@ public enum AssetType {
     TILE_GRASS,
     TILE_GRAVEL,
     TILE_WALL,
-    TILE_WATER
+    TILE_WATER,
+    PLAYER
 }
