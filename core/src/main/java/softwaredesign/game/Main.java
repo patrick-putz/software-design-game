@@ -3,6 +3,7 @@ package softwaredesign.game;
 import softwaredesign.game.assets.AssetRepository;
 import softwaredesign.game.gameobjects.GameObject;
 import softwaredesign.game.gameobjects.Sign;
+import softwaredesign.game.gameobjects.mapdesigner.MapDesigner;
 import softwaredesign.game.input.GameInput;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
@@ -31,10 +32,10 @@ public class Main extends ApplicationAdapter {
 	public void create() {
 		AssetRepository.loadAssets();
 		batch = new SpriteBatch();
-		gameObjects.add(new Sign());
-		font = new BitmapFont();
-		font.setColor(Color.WHITE);
 		Gdx.input.setInputProcessor(this.gameInput);
+
+		MapDesigner mapDesigner = new MapDesigner();
+		mapDesigner.createStartingPointMap(gameObjects);
 	}
 
 	private void act(float delta) {
@@ -49,7 +50,6 @@ public class Main extends ApplicationAdapter {
 		for(GameObject gameObject : gameObjects) {
 			gameObject.draw(batch);
 		}
-		font.draw(batch, "Hello Game", -220, -220);
 		batch.end();
 	}
 
